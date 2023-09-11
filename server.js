@@ -3,7 +3,7 @@ const fs =require("fs");
 const api_routers =require('./routers/api-routers');
 const html_routers =require('./routers/html-routers');
 
-const PORT = 3001;
+const PORT = process.env.PORT||3001;
 
 const app = express();
 
